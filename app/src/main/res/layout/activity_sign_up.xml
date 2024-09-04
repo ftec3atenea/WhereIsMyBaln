@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/fondo3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondeu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titulo3"
+                style="@style/sty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="¿Dónde está mi balneario?" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/input_user3"
+                    style="@style/sty_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Elija su usuario"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/input_name3"
+                    style="@style/sty_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Escriba su nombre"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/input_email3"
+                    style="@style/sty_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Escriba su email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/input_pass3"
+                    style="@style/sty_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Elija su pass"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/confirm_pass3"
+                    style="@style/sty_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirme su pass"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Acepto TyC" />
+
+                <Button
+                    android:id="@+id/btn_signup3"
+                    style="@style/sty_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Únete!"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="2dp" />
+
+                <TextView
+                    android:id="@+id/ytc3"
+                    style="@style/sty_aux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="¿Ya tienes cuenta?" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorites">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fondeu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/sty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="¿Dónde está mi balneario?" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color2"
+                app:tabIconTint="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabSelectedTextColor="@color/white">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/it71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/americas"
+                    android:text="América" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/it72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/europe"
+                    android:text="Europa" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp7"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/search7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="50dp"
+                    android:padding="10dp"
+                    android:background="#00FFFFFF"
+                    android:elevation="20dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/location" />
+
+                <ImageButton
+                    android:id="@+id/logOut7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

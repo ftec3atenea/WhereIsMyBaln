@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyBaln</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_1">
+        \t - Colombia\n
+        \t - Brasil\n
+        \t - Argentina\n
+        \t - Aruba\n
+        \t - Curacao\n
+        \t - Rep. Dominicana\n
+        \t - Perú
+        </string>
+    <string name="fragment_2">
+        \t - España\n
+        \t - Francia\n
+        \t - Alemania\n
+        \t - Inglaterra\n
+        \t - Italia\n
+        \t - Grecia\n
+        \t - Rusia
+        </string>
+</resources>
