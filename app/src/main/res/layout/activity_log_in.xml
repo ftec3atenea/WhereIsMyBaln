@@ -10,6 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/fondo"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondeu" />
 
@@ -29,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:text="¿Dónde está mi balneario?" />
+                android:text="@string/whereIsMyBaln" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba su usuario"
+                    android:autofillHints="@string/writeUser"
+                    android:hint="@string/writeUser"
                     android:inputType="text" />
 
                 <EditText
@@ -51,7 +53,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba su pass"
+                    android:autofillHints="@string/writePass"
+                    android:hint="@string/writePass"
                     android:inputType="textPassword" />
 
                 <Button
@@ -60,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
-                    android:text="¡Iniciemos!"
+                    android:text="@string/letsGo"
                     app:cornerRadius="5dp"
                     app:strokeColor="@color/black"
                     app:strokeWidth="2dp" />
@@ -71,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:text="¿Has olvidado tu contraseña?" />
+                    android:text="@string/forgotPass" />
 
                 <TextView
                     android:id="@+id/ntc2"
@@ -79,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="¿No tienes cuenta?" />
+                    android:text="@string/notAccount" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

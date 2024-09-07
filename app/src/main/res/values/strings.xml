@@ -19,4 +19,27 @@
         \t - Grecia\n
         \t - Rusia
         </string>
+    <string name="whereIsMyBaln">¿Dónde está mi balneario?</string>
+    <string name="fondo">Background</string>
+    <string name="america">América</string>
+    <string name="europa">Europa</string>
+    <string name="logOut">Cerrar Sesión</string>
+    <string name="search">Búsqueda</string>
+    <string name="writeUser">Escribe tu usuario</string>
+    <string name="writePass">Escribe tu pass</string>
+    <string name="writeEmail">Escribe tu correo</string>
+    <string name="writeName">Escribe tu nombre</string>
+    <string name="letsGo">¡Iniciemos!</string>
+    <string name="forgotPass">¿Has olvidado tu contraseña?</string>
+    <string name="notAccount">¿No tienes cuenta?</string>
+    <string name="myStar">¿Y mi estrella?</string>
+    <string name="graz">¡Grazie mille!</string>
+    <string name="haveAccount">¿Ya tienes cuenta?</string>
+    <string name="joinUs">¡Únete!</string>
+    <string name="recoveryIt">¡A recuperarlo!</string>
+    <string name="location">Ubicación</string>
+    <string name="seeNear">Ver cercanos</string>
+    <string name="favorites">Mis favoritos</string>
+    <string name="confirmPass">Confirma tu pass</string>
+    <string name="tyc">Acepto T&amp;C</string>
 </resources>

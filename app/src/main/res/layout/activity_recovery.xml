@@ -10,6 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/fondo"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondeu" />
 
@@ -19,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical" >
 
@@ -28,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:text="¿Dónde está mi balneario?" />
+                android:text="@string/whereIsMyBaln" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -42,7 +43,7 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Escribe tu usuario"
+                    android:hint="@string/writeUser"
                     android:inputType="text" />
 
                 <Button
@@ -51,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="¡A recuperarlo!"
+                    android:text="@string/recoveryIt"
                     app:cornerRadius="5dp"
                     app:strokeColor="@color/black"
                     app:strokeWidth="1dp" />
@@ -62,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
-                    android:text="¿Ya tienes cuenta?" />
+                    android:text="@string/haveAccount" />
 
                 <TextView
                     android:id="@+id/ntc4"
@@ -70,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="¿No tienes cuenta?" />
+                    android:text="@string/notAccount" />
 
             </LinearLayout>
         </LinearLayout>

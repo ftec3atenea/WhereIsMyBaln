@@ -1,5 +1,4 @@
 package com.example.whereismybaln;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -20,9 +19,10 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Search extends AppCompatActivity implements OnMapReadyCallback {
-
+    // Instanciamos la variable global para usar Google Maps
     private GoogleMap gmMap;
 
     @Override
@@ -57,10 +57,11 @@ public class Search extends AppCompatActivity implements OnMapReadyCallback {
             startActivity(intent);
             // Le indicamos al usuario que ha pulsado el boton
             Toast.makeText(this, "Veamos tus favoritos", Toast.LENGTH_SHORT).show();
-
             // Animación de cambio de pantalla
             overridePendingTransition(R.anim.page_in, R.anim.page_out);
         });
+
+        // Añadimos un listener al boton de logout
         logOut6.setOnClickListener(v -> {
             // Creamos un intent para ir a la actividad de logOut
             Intent intent = new Intent(this, logOut.class);
@@ -71,12 +72,13 @@ public class Search extends AppCompatActivity implements OnMapReadyCallback {
             // Animación de cambio de pantalla
             overridePendingTransition(R.anim.page_in, R.anim.page_out);
         });
+
+        // Añadimos un listener al boton de search
         search.setOnClickListener(v -> {
-            // vibracion
+            // Animacion de vibracion
             search.startAnimation(vibrate);
             // Le indicamos al usuario que ha pulsado el boton
             Toast.makeText(this, "¿Qué hay pa'cer?", Toast.LENGTH_SHORT).show();
-            //
         });
     }
 

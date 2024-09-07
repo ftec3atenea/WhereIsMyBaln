@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035456376427",
+    "project_id": "loginwimb",
+    "storage_bucket": "loginwimb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035456376427:android:d9cb23292c09d21060cb2e",
+        "android_client_info": {
+          "package_name": "com.example.whereismybaln"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArHUZvmIeNyLUKoImdNNww8uxixTfH29c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,6 @@
         app:cardCornerRadius="50dp"
         app:cardElevation="50dp"
         app:cardBackgroundColor="@color/color1" >
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -11,6 +11,7 @@
         android:id="@+id/fondo3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/fondo"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondeu" />
 
@@ -20,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical" >
 
@@ -30,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:text="¿Dónde está mi balneario?" />
+                android:text="@string/whereIsMyBaln" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Elija su usuario"
+                    android:autofillHints="@string/writeUser"
+                    android:hint="@string/writeUser"
                     android:inputType="text" />
 
                 <EditText
@@ -51,7 +53,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba su nombre"
+                    android:autofillHints="@string/writeName"
+                    android:hint="@string/writeName"
                     android:inputType="text" />
 
                 <EditText
@@ -59,7 +62,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba su email"
+                    android:autofillHints="@string/writeEmail"
+                    android:hint="@string/writeEmail"
                     android:inputType="textEmailAddress" />
 
                 <EditText
@@ -67,7 +71,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Elija su pass"
+                    android:autofillHints="@string/writePass"
+                    android:hint="@string/writePass"
                     android:inputType="textPassword" />
 
                 <EditText
@@ -75,7 +80,8 @@
                     style="@style/sty_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Confirme su pass"
+                    android:autofillHints="@string/writePass"
+                    android:hint="@string/confirmPass"
                     android:inputType="textPassword" />
 
                 <CheckBox
@@ -83,14 +89,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
-                    android:text="Acepto TyC" />
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/tyc" />
 
                 <Button
                     android:id="@+id/btn_signup3"
                     style="@style/sty_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¡Únete!"
+                    android:text="@string/joinUs"
                     app:cornerRadius="5dp"
                     app:strokeColor="@color/black"
                     app:strokeWidth="2dp" />
@@ -101,8 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:text="¿Ya tienes cuenta?" />
-
+                    android:text="@string/haveAccount" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

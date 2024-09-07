@@ -1,5 +1,4 @@
 package com.example.whereismybaln;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,11 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 import com.google.android.material.tabs.TabLayout;
 
 public class Favorites extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +30,10 @@ public class Favorites extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tl7);
         ViewPager2 viewPager = findViewById(R.id.vp7);
 
-        // Creamos el adaptador
+        // Creamos el adaptador para el viewPager (El que gestiona los fragmentos)
         PageController pagerController2 = new PageController(getSupportFragmentManager(), getLifecycle());
         viewPager.setAdapter(pagerController2);
+
         // Conectamos el tabLayout con el viewPager
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
@@ -43,6 +41,7 @@ public class Favorites extends AppCompatActivity {
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
+
         // Añadimos un listener al tabLayout
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -66,6 +65,7 @@ public class Favorites extends AppCompatActivity {
             // Animación de cambio de pantalla
             overridePendingTransition(R.anim.page_in, R.anim.page_out);
         });
+        // Añadimos un listener al boton de logOut
         logOut7.setOnClickListener(v -> {
             // Generamos el intent
             Intent intent = new Intent(this, logOut.class);

@@ -15,6 +15,7 @@
     <style name="sty_input">
         <item name="android:ems">9</item>
         <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">italic</item>

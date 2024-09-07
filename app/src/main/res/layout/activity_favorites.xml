@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/fondo"
         app:srcCompat="@drawable/fondeu" />
 
     <ScrollView
@@ -19,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical" >
 
@@ -28,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:text="¿Dónde está mi balneario?" />
+                android:text="@string/whereIsMyBaln" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tl7"
@@ -44,14 +45,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:icon="@drawable/americas"
-                    android:text="América" />
+                    android:text="@string/america" />
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/it72"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:icon="@drawable/europe"
-                    android:text="Europa" />
+                    android:text="@string/europa" />
             </com.google.android.material.tabs.TabLayout>
 
             <androidx.viewpager2.widget.ViewPager2
@@ -71,6 +72,7 @@
                     android:id="@+id/search7"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:contentDescription="@string/search"
                     android:layout_marginEnd="50dp"
                     android:padding="10dp"
                     android:background="#00FFFFFF"
@@ -82,6 +84,7 @@
                     android:id="@+id/logOut7"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:contentDescription="@string/logOut"
                     android:padding="10dp"
                     android:background="#00FFFFFF"
                     android:scaleType="centerCrop"
